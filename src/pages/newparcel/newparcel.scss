@@ -1,0 +1,115 @@
+page-newparcel {
+  .left-icon {
+    color: white;
+  }
+
+  .header-title {
+    color: white !important;
+  }
+
+  .search_icon.icon {
+    position: absolute;
+    right: 5px;
+    color: white;
+  }
+
+  .title_menu {
+    position: absolute;
+    color: white;
+    left: 42%;
+    // margin-top: -8px;
+  }
+
+  .search_icon {
+    width: 6%;
+    // margin-top: -8px;
+  }
+
+  .menu_icon {
+    margin-left: 10px !important;
+    color: white;
+  }
+
+  ion-icon.left-icon {
+    margin-left: 5%;
+  }
+
+  .item_details {
+    color: #e5636e;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  p.description_text {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 5px;
+    font-weight: 400;
+  }
+
+  p.description_text_details {
+    text-align: center;
+    font-size: 9px;
+    margin-top: -11px;
+    font-weight: 400;
+  }
+
+  .courier_details {
+    font-size: 18px;
+    color: #e5636e;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 25px;
+  }
+
+  .tracking_input_box {
+    padding: 15px;
+    border: 1px solid gray;
+    width: 74%;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  input[type=text]:focus {
+    border: 1px solid #e5636e;
+  }
+
+  input.input_fileds {
+    padding: 15px;
+    border: 1px solid gray;
+    width: 90%;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  input:focus::-webkit-input-placeholder {
+    color: #e5636e;
+  }
+
+  .pay_button_inner {
+    background-color: #e5636e !important;
+    width: 90%;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 22px;
+    border-radius: 5px;
+    margin-top: 55px;
+  }
+
+  span.button-inner {
+    font-weight: 100;
+    color: #fffffff2;
+    text-transform: none;
+  }
+
+  img.barcode_image {
+    max-width: 50px;
+    height: 50px;
+    margin: 0px;
+    margin-top: 20px;
+  }
+}

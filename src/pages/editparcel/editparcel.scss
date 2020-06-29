@@ -1,0 +1,72 @@
+page-editparcel {
+    
+  .toolbar-title {
+    margin-left: -15px;
+}
+      .courier_details {
+        font-size: 18px;
+        color: #e5636e;
+        font-weight: 500;
+        margin-left: 20px;
+        margin-top: 25px;
+      }
+    
+      input.tracking_input_box {
+        padding: 15px;
+        border: 1px solid gray;
+        width: 74%;
+        border-radius: 5px;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+    
+      input[type=text]:focus {
+        border: 1px solid #e5636e;
+      }
+    
+      input.input_fileds {
+        padding: 15px;
+        border: 1px solid gray;
+        width: 90%;
+        border-radius: 5px;
+        margin-left: 20px;
+        margin-top: 30px;
+      }
+    
+      input:focus::-webkit-input-placeholder {
+        color: #e5636e;
+      }
+    
+      .pay_button_inner {
+        background-color: #e5636e !important;
+        width: 90%;
+        margin-left: 16px;
+        margin-right: 16px;
+        padding: 22px;
+        border-radius: 5px;
+        margin-top: 55px;
+      }
+    
+      span.button-inner {
+        font-weight: 100;
+        color: #fffffff2;
+        text-transform: none;
+      }
+    
+      img.barcode_image {
+        max-width: 50px;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 4px;
+      }
+
+      button.delete_button {
+        background-color: #a01515 !important;
+        width: 90%;
+        margin-left: 16px;
+        margin-right: 16px;
+        padding: 22px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+}

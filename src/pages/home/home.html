@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button menuToggle>
+        <ion-icon class="header-icon" name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title text-center>Home</ion-title>
+    <ion-buttons end>
+      <button padding ion-button icon-only (click)="toggleSearch()">
+        <ion-icon class="search_icon" ios="ios-search" md="md-search" ></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="isSearchbar" [@enterAnimation]>
+    <ion-searchbar #searchbar [(ngModel)]="searchText" (ionChange)="search()" class="searchbar"></ion-searchbar>
+  </div>
+  <div *ngIf="!noParcels" style="margin-bottom: 20pt">
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+    <p class="paragraph">Recent</p>
+    <ion-list *ngFor="let parcel of parcelList; let i = index">
+      <ion-item-sliding #slidingItem>
+        <ion-item>
+          <div class="row">
+            <div class="col-md-4" (click)="openDetailpage(parcel)">
+              <img class="Group_icon" src="assets/icon/Group 5282.png">
+            </div>
+            <div class="col-md-8" (click)="openDetailpage(parcel)">
+              <div class="new_text">{{parcel.courier}}</div>
+              <span *ngIf="parcel.senderParcel!==''" class="price_text">Sender({{parcel.senderParcel}})</span>
+            </div>
+            <img (click)="editParcel(parcel)" class="edit_icon" src="assets/icon/icon-edit.png">
+            <div (click)="openDetailpage(parcel)" class="tracking_id">Tracking Id: {{parcel.trackerID}}</div>
+            <div (click)="openDetailpage(parcel)" class="date_detail">{{parcel.addedDate | date:'medium'}}</div>
+          </div>
+        </ion-item>
+
+        <ion-item-options side="right">
+          <button ion-button (click)="archive(parcel,slidingItem)">
+            <ion-icon ios="ios-archive" md="md-archive"></ion-icon>Archive
+          </button>
+          <button ion-button color="danger" (click)="delete(parcel,slidingItem,i)">
+            <ion-icon ios="ios-trash" md="md-trash"></ion-icon>Delete
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+  </div>
+  <div *ngIf="noParcels" style="margin-top: 20pt;font-size: 1.5rem;text-align: center">There are no parcels added yet.</div>
+</ion-content>
+
+<ion-footer>
+  <div class="pay_button">
+    <button (click)="addNewParcel()" class="pay_button_inner" ion-button>Add New Parcel</button>
+  </div>
+</ion-footer>

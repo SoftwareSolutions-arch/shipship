@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="courier_details">Courier Detail</div>
+    <div class="tracking_input">
+      <div class="row">
+        <input class="tracking_input_box" type="text" placeholder="Tracking Number" [(ngModel)]="parcel.trackerID">
+        <img class="barcode_image" src="assets/icon/Image 1.png">
+      </div>
+    </div>
+    <div class="input_box">
+      <input class="input_fileds" type="text" placeholder="Courier" [(ngModel)]="parcel.courier">
+    </div>
+    <div class="input_box">
+      <input class="input_fileds" type="text" placeholder="Sender(Optional)" [(ngModel)]="parcel.senderParcel">
+    </div>
+    <div class="input_box">
+      <input class="input_fileds" type="text" placeholder="Content(Optional)" [(ngModel)]="parcel.content">
+    </div>
+  <div class="pay_button">
+    <button class="pay_button_inner" ion-button (click)="saveDetails()">Save And Exit</button>
+
+  </div>
+  <div class="pay_button">
+    <button class="delete_button" ion-button (click)="deleteDetails()">Delete</button>
+  </div>
+</ion-content>

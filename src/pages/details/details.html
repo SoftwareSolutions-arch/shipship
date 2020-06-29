@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div #map id="map" style="height:100%">
+  </div>
+  <div class="container">
+    <ion-list *ngFor="let trendingItems of trackingdetails">
+      <div (click)="toggleFullMap()" class="row a">
+        <div col-4>
+          <img class="Group_icon" [src]="imageslogo">
+        </div>
+        <div col-8 style="float: right;">
+          <p class="track_details">Tracking Id : {{trendingItems.tracking_number}}</p>
+          <p class="sender_text">Sender({{trendingItems.carrier_code}})</p>
+          <p class="sender_text">Status:{{trendingItems.status}}</p>
+        </div>
+      </div>
+      <ion-scroll [@slideIn] margin-bottom margin-top *ngIf="!isFullMap" style="width:100%;height:40vh" scrollY="true">
+        <ion-item scroll=true class="scroller" class="item_details" *ngFor="let trackinfoItems of trackinfo">
+          <div class="text_center">
+            <p class="track_id">{{trackinfoItems.Details}}</p>
+            <p class="sender_text">{{trackinfoItems.Date}}</p>
+          </div>
+          <div class="image_text">
+            <img class="blue_tics" src="../../assets/icon/Icon awesome-check-circle.png">
+          </div>
+        </ion-item>
+      </ion-scroll>
+    </ion-list>
+  </div>
+</ion-content>

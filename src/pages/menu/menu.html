@@ -1,0 +1,48 @@
+<ion-menu [content]="content" type="overlay">
+  <ion-content style="background: #e5636e;">
+    <ion-list>
+      <div class='main-list-div'>
+        <ion-item menuClose style="margin-bottom: 5px;">
+            <ion-icon style="float: right;" ios="ios-close" md="md-close"></ion-icon>
+        </ion-item>
+        <ion-item class="item_list" menuClose (click)="openPages('HomePage')">
+          <ion-label class="home">
+            <img class="new_text" src="assets/icon/Group 5284.png" />
+            <span class="menu_text">Parcels</span>
+          </ion-label>
+        </ion-item>
+        <ion-item class="item_list" menuClose (click)="openPage('ArchivePage')">
+          <ion-label class="home">
+            <img class="new_text" src="assets/icon/Group 5285.png" />
+            <span class="menu_text">Archive</span>
+          </ion-label>
+        </ion-item>
+        <ion-item class="item_list" menuClose (click)="shareViaEmail()">
+          <ion-label class="home">
+            <img class="new_text" src="assets/icon/Group 5286.png" />
+            <span class="menu_text">Feedback</span>
+          </ion-label>
+        </ion-item>
+        <!-- <ion-item class="item_list" menuClose (click)="openPage('AboutPage')">
+          <ion-label class="home">
+            <img class="new_text" src="assets/icon/Group 5287.png" />
+            <span class="menu_text">About</span>
+          </ion-label>
+        </ion-item> -->
+        <ion-item class="item_list" menuClose (click)="shareapp()">
+          <ion-label class="home">
+            <img class="new_text" src="assets/icon/Group 5288.png" />
+            <span class="menu_text">Share App</span>
+          </ion-label>
+        </ion-item>
+        <ion-item class="item_list" menuClose (click)="exitApp()">
+          <ion-label class="home">
+            <img class="new_text" src="assets/icon/Group 5289.png" />
+            <span class="menu_text">Exit</span>
+          </ion-label>
+        </ion-item>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-nav #content [root]="rootPage"></ion-nav>

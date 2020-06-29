@@ -1,0 +1,103 @@
+page-details {
+  .scroll-content {
+    padding: 0px !important;
+  }
+
+  .container {
+    position: absolute;
+    bottom: 0px;
+    background: white;
+    width: 83%;
+    height: auto !important;
+    //height: 69%;
+    margin-left: 6%;
+    overflow: hidden;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+
+  .Group_icon {
+    width: 55pt;
+    height: 47pt;
+    margin-left: 16px;
+    margin-top: 30px;
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .row.a {
+    border-bottom: 1px solid #0000002e;
+    margin-bottom: 0px !important;
+    //margin-bottom: 15px;
+  }
+
+  p.track_id {
+    color: black;
+    font-size: 12px;
+    margin-top: -2px;
+  }
+
+  p.sender_text {
+    font-size: 11px;
+    color: black;
+  }
+
+  .text_center {
+    width: 70%;
+    float: left;
+    margin-left: 56px;
+  }
+
+  .image_text {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+  }
+
+  img.blue_tics {
+    max-width: 13px;
+  }
+
+  .label {
+    margin: 0px !important;
+  }
+
+  p.track_details {
+    color: black;
+    font-size: 11px;
+    margin-top: 28px;
+  }
+
+  .list.list-md ion-item.item_details.item.item-block.item-md {
+    position: relative;
+  }
+
+  .list.list-md ion-item.item_details.item.item-block.item-md::before {
+    content: "";
+    // background: url(../../assets/icon/Group 5283.png);
+    background: url('../assets/icon/Group\ 5283.png');
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 44px;
+    height: 100px;
+    background-repeat: no-repeat;
+  }
+
+  ion-item.item_details.item.item-block.item-ios {
+    position: relative;
+  }
+
+  ion-item.item_details.item.item-block.item-ios::before {
+    content: "";
+    // background: url(../../assets/icon/Group 5283.png);
+    background: url('../assets/icon/Group\ 5283.png');
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 44px;
+    height: 100px;
+    background-repeat: no-repeat;
+  }
+}

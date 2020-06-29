@@ -1,0 +1,123 @@
+page-home {
+
+  button.bar-buttons.bar-buttons-md {
+    background: none;
+    color: white;
+  }
+
+  p.paragraph {
+    color: #e5636e !important;
+  }
+
+  .price_text {
+    font-size: 10px;
+    color: black;
+  }
+
+  .Group_icon {
+    width: 55pt;
+    height: 55pt;
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .col-md-8 {
+    width: 64%;
+    margin-top: 13px !important;
+  }
+
+  .col-md-4 {
+    width: 30%;
+  }
+
+  ion-list.list.list-md {
+    border: 1px solid #00000045;
+  }
+
+  .new_text {
+    color: #000000e0;
+  }
+
+  div.date_detail {
+    float: right;
+    font-size: 10px;
+    position: absolute;
+    bottom: 14px;
+    right: 11px;
+    color: black;
+  }
+
+  div.tracking_id {
+    font-size: 10px;
+    color: black;
+  }
+
+  img.edit_icon {
+    height: 15px;
+  }
+
+  .item.item-block.item-ios {
+    border: 1px solid #c8c7cc;
+  }
+
+  .pay_button_inner {
+    background-color: #e5636e !important;
+    width: 90%;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 22px;
+    border-radius: 5px;
+  }
+
+  .back-button.show-back-button {
+    display: none !important;
+  }
+
+  .pay_button {
+    margin-top: -20%;
+  }
+
+  .header-icon {
+    font-size: 2.5rem;
+  }
+
+  button.bar-buttons {
+    background: none !important;
+    color: white;
+  }
+
+  .item.item-block.item-md {
+    background: none !important;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #8080802b;
+  }
+
+  .item.item-block.item-ios {
+    background: none !important;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #8080802b;
+  }
+
+  .searchbar-md {
+    padding: 0px;
+  }
+
+  .searchbar-md .searchbar-input {
+    border-radius: 23px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3rem;
+    background-color: #e5636e;
+    box-shadow: none !important;
+    color: white;
+  }
+
+  .searchbar-ios{
+    border: 2px solid gray;
+    background: none !important;
+    border-radius: 23px;
+    box-shadow: none !important;
+    color: white;
+  }
+}
